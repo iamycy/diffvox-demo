@@ -1,0 +1,280 @@
+<!doctype html>
+<html lang="en" class="h-100">
+
+    <head>
+        <!-- <script async
+            src="https://www.googletagmanager.com/gtag/js?id=G-RB1FK8CZG9"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-RB1FK8CZG9');
+    </script> -->
+
+        <meta charset="utf-8">
+        <meta name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content>
+        <meta name="author" content="Chin-Yun Yu">
+        <title>Differentiable Time-Varying Linear Prediction in the Context of
+            End-to-End Analysis-by-Synthesis</title>
+
+        <!-- Bootstrap core CSS -->
+        <link rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+            integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+            crossorigin="anonymous">
+        <meta name="theme-color" content="#563d7c">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css">
+    </head>
+
+    <body>
+        <!-- Page Content -->
+        <div class="text-center">
+            <div class="row">
+                <div class="col-lg-12">
+                    <br>
+                    <h1 class="mt-5 mb-3"> DiffVox: A Differentiable Model
+                        <br>for Capturing and Analysing Vocal Effects
+                        Distributions</h1>
+                    <p class="lead">
+                        <a href="https://iamycy.github.io/"
+                            target=”_blank”>Chin-Yun Yu</a> <sup>1*</sup>,
+                        Marco A. Martínez-Ramírez <sup>2</sup>,
+                        Junghyun Koo <sup>2</sup>,
+                        <a href="https://benhayes.net/" target=”_blank”>Ben
+                            Hayes</a> <sup>1</sup>,
+                        Wei-Hsiang Liao <sup>2</sup>,
+                        <a href="http://www.eecs.qmul.ac.uk/~gyorgyf/"
+                            target=”_blank”>György Fazekas</a> <sup>1</sup>,
+                        <a href="https://www.yukimitsufuji.com/"
+                            target=”_blank”>Yuki Mitsufuji</a> <sup>23</sup>
+                    </p>
+
+                    <p class="lead">
+                        <sup>1</sup> Centre for Digital Music, Queen Mary
+                        University of London<br>
+                        <sup>2</sup> Sony AI<br>
+                        <sup>3</sup> Sony Group Corporation<br>
+                        <sup>*</sup> Work done during an internship at Sony AI.
+                    </p>
+
+                    <div>
+                        <a class="btn btn-outline-dark"
+                            href="https://arxiv.org/abs/2504.147358"
+                            target=”_blank”
+                            type="button">
+                            <i class="bi bi-newspaper"></i> Paper</a>
+                        <a class="btn btn-outline-dark"
+                            href="https://github.com/SonyResearch/diffvox/"
+                            target=”_blank”
+                            type="button">
+                            <i class="bi bi-code-slash"></i> Code</a>
+                        <a class="btn btn-outline-dark"
+                            href="https://huggingface.co/spaces/yoyolicoris/diffvox"
+                            target=”_blank”
+                            type="button">
+                            <i class="bi" style="font-style: normal;">🤗</i>
+                            Demo</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="section mt-5 mb-5">
+                <div class="abstract">
+                    <h2 class="text-center">Abstract</h2>
+                    <hr>
+                    <p>
+                        This study introduces a novel and interpretable model,
+                        DiffVox, for matching vocal effects in music production.
+                        DiffVox, short for "Differentiable Vocal Fx",
+                        integrates parametric equalisation, dynamic range
+                        control, delay, and reverb with efficient differentiable
+                        implementations to enable gradient-based optimisation
+                        for parameter estimation. Vocal presets are retrieved
+                        from two datasets, comprising 70 tracks from MedleyDB
+                        and 365 tracks from a private collection. Analysis of
+                        parameter correlations reveals strong relationships
+                        between effects and parameters, such as the high-pass
+                        and low-shelf filters often working together to shape
+                        the low end, and the delay time correlating with the
+                        intensity of the delayed signals. Principal component
+                        analysis reveals connections to McAdams' timbre
+                        dimensions, where the most crucial component modulates
+                        the perceived spaciousness while the secondary
+                        components influence spectral brightness. Statistical
+                        testing confirms the non-Gaussian nature of the
+                        parameter distribution, highlighting the complexity of
+                        the vocal effects space. These initial findings on the
+                        parameter distributions set the foundation for future
+                        research in vocal effects modelling and automatic
+                        mixing.
+                    </p>
+                    <img class="img-fluid" src='assets/images/diagram.png'>
+                    <br>
+                    <br>
+                    <p class="text-center">Figure 1: <em>The proposed model
+                            (upper left) and individual effects for vocal
+                            effects processing. </em></p>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2 class="text-center">Listening Samples</h2>
+                <hr>
+                <div class="section mb-5">
+                    <p>
+                        <!-- This section contains the listening samples from the
+                        VCTK Corpus used for subjective evaluation in
+                        the paper. Reference is the ground truth audio, and the
+                        other columns are the copy-synthesis speech
+                        using the same clip with different models, which are the
+                        traditional linear predictive coding
+                        (<b>LPC</b>), the neural homomorphic vocoder
+                        (<b>NHV</b>), the differentiable WORLD vocoder
+                        (<b>&#9661World</b>), and the proposed source-filter
+                        GOLF vocoder (<b>GOLF</b>). -->
+                    </p>
+                </div>
+
+                <!-- <h3 class="text-center">p361</h3> -->
+
+                <div class="table-wrapper">
+                    <table class="table table-sm text-center"
+                        style="vertical-align: middle;">
+                        <colgroup>
+                            <col style="width: 10%;">
+                            <col>
+                            <col>
+                            <col>
+                            <col>
+                            <col>
+                        </colgroup>
+                        <tr>
+                            <th>Sample</th>
+                            <th class="audio-col"><span>No effects</span></th>
+                            <th class="audio-col"><span>Target</span></th>
+                            <th class="audio-col"><span>DiffVox</span></th>
+                            <th class="audio-col"><span>w/o FDN</span></th>
+                            <th class="audio-col"><span>w/o DLY</span></th>
+                            <th class="audio-col"><span>w/o FDN &
+                                    DLY</span></th>
+                        </tr>
+                        <tr>
+                            <td class="passage">AClassicEducation_NightOwl</td>
+                            <td>
+                                <audio controls="controls" class="player"
+                                    preload="metadata">
+                                    <source
+                                        src="assets/audio/AClassicEducation_NightOwl/dry.mp3"
+                                        type="audio/mp3">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls="controls" class="player"
+                                    preload="metadata">
+                                    <source
+                                        src="assets/audio/AClassicEducation_NightOwl/wet.mp3"
+                                        type="audio/mp3">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls="controls" class="player"
+                                    preload="metadata">
+                                    <source
+                                        src="assets/audio/AClassicEducation_NightOwl/diffvox.mp3"
+                                        type="audio/mp3">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls="controls" class="player"
+                                    preload="metadata">
+                                    <source
+                                        src="assets/audio/AClassicEducation_NightOwl/no_reverb.mp3"
+                                        type="audio/mp3">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls="controls" class="player"
+                                    preload="metadata">
+                                    <source
+                                        src="assets/audio/AClassicEducation_NightOwl/no_delay.mp3"
+                                        type="audio/mp3">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls="controls" class="player"
+                                    preload="metadata">
+                                    <source
+                                        src="assets/audio/AClassicEducation_NightOwl/no_spatial.mp3"
+                                        type="audio/mp3">
+                                </audio>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div class="section">
+                    <h2 class="text-center">Citation</h2>
+                    <hr>
+                    <div style="background-color: #e9ecef;">
+                        <pre><code>
+@inproceedings{ycy2024golf,
+    title={Differentiable Time-Varying Linear Prediction in the Context of End-to-End Analysis-by-Synthesis},
+    author={Chin-Yun Yu and Gy{\"o}rgy Fazekas},
+    booktitle={INTERSPEECH},
+    year={2024}
+}
+  </code></pre>
+                    </div>
+                </div>
+
+                <hr>
+                <footer>
+                    <p>Send feedback and questions to <a
+                            href="mailto:chin-yun.yu@qmul.ac.uk"
+                            target=”_blank”>Chin-Yun Yu</a>.
+                        <br>Scroll to <a href="#">top</a>.
+                    </p>
+                    <p>&nbsp;</p>
+                </footer>
+            </div>
+
+            <!-- Bootstrap core JavaScript -->
+            <script
+                src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+                integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+                crossorigin="anonymous"></script>
+            <script
+                src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+                integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+                crossorigin="anonymous"></script>
+            <script
+                src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+                integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+                crossorigin="anonymous"></script>
+            <script src="js/slider.js"></script>
+        </body>
+        <script>
+    // Select all audio elements with the class 'audio-player'
+    const audios = document.querySelectorAll('audio');
+    let currentAudio = null;
+
+    audios.forEach(audio => {
+        audio.addEventListener('play', () => {
+            // Pause the currently playing audio if it's different from the new one
+            if (currentAudio && currentAudio !== audio) {
+                currentAudio.pause();
+            }
+            // Update the currently playing audio
+            currentAudio = audio;
+        });
+    });
+</script>
+
+    </html>
