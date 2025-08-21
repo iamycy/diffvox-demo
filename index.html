@@ -116,6 +116,8 @@
                         mixing.
                     </p>
                 </div>
+                <br>
+                <br>
                 <img class="img-fluid" src='assets/images/diagram.png'>
                 <br>
                 <br>
@@ -141,8 +143,6 @@
                         implementations.
                     </p>
                 </div>
-
-                <!-- <h3 class="text-center">p361</h3> -->
 
                 <div class="table-wrapper">
                     <table class="table table-sm text-center"
@@ -670,6 +670,706 @@
                                 </audio>
                             </td>
                         </tr>
+                    </table>
+                </div>
+
+                <h2 class="text-center">Different Effects Configurations</h2>
+                <hr>
+                <p>
+                    The following table shows the different effects
+                    configurations that is used in the paper. <b>Target</b>
+                    is the target effects that we want to match, <b>DiffVox</b>
+                    is the full DiffVox model, <b>w/o DLY</b> is the DiffVox
+                    model without the delay effect, <b>w/o FDN</b> is the
+                    DiffVox model without the FDN reverb effect, and <b>w/o DLY
+                        & FDN</b> is the DiffVox model without both delay and
+                    FDN reverb effects. The audio samples are selected from
+                    the vocal tracks of the MedleyDB dataset.
+                </p>
+
+                <!-- Inserted table for configurations using tracks MusicDelta_80sRock -> Torres_NewSkin -->
+                <div class="table-wrapper">
+                    <table class="table table-sm text-center"
+                        style="vertical-align: middle;">
+                        <colgroup>
+                            <col style="width: 10%;">
+                            <col>
+                            <col>
+                            <col>
+                            <col>
+                            <col>
+                        </colgroup>
+                        <tr>
+                            <th>Sample</th>
+                            <th class="audio-col"><span>Target</span></th>
+                            <th class="audio-col"><span>DiffVox</span></th>
+                            <th class="audio-col"><span>w/o DLY</span></th>
+                            <th class="audio-col"><span>w/o FDN</span></th>
+                            <th class="audio-col"><span>w/o DLY &amp;
+                                    FDN</span></th>
+                        </tr>
+
+                        <tr>
+                            <td class="passage">MusicDelta_80sRock</td>
+                            <td>
+                                <audio controls class="player"
+                                    preload="metadata">
+                                    <source
+                                        src="assets/audio/MusicDelta_80sRock/wet.mp3"
+                                        type="audio/mp3">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls class="player"
+                                    preload="metadata">
+                                    <source
+                                        src="assets/audio/MusicDelta_80sRock/diffvox.mp3"
+                                        type="audio/mp3">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls class="player"
+                                    preload="metadata">
+                                    <source
+                                        src="assets/audio/MusicDelta_80sRock/no_delay.mp3"
+                                        type="audio/mp3">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls class="player"
+                                    preload="metadata">
+                                    <source
+                                        src="assets/audio/MusicDelta_80sRock/no_reverb.mp3"
+                                        type="audio/mp3">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls class="player"
+                                    preload="metadata">
+                                    <source
+                                        src="assets/audio/MusicDelta_80sRock/no_spatial.mp3"
+                                        type="audio/mp3">
+                                </audio>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="passage">MusicDelta_Beatles</td>
+                            <td>
+                                <audio controls class="player"
+                                    preload="metadata">
+                                    <source
+                                        src="assets/audio/MusicDelta_Beatles/wet.mp3"
+                                        type="audio/mp3">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls class="player"
+                                    preload="metadata">
+                                    <source
+                                        src="assets/audio/MusicDelta_Beatles/diffvox.mp3"
+                                        type="audio/mp3">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls class="player"
+                                    preload="metadata">
+                                    <source
+                                        src="assets/audio/MusicDelta_Beatles/no_delay.mp3"
+                                        type="audio/mp3">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls class="player"
+                                    preload="metadata">
+                                    <source
+                                        src="assets/audio/MusicDelta_Beatles/no_reverb.mp3"
+                                        type="audio/mp3">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls class="player"
+                                    preload="metadata">
+                                    <source
+                                        src="assets/audio/MusicDelta_Beatles/no_spatial.mp3"
+                                        type="audio/mp3">
+                                </audio>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="passage">MusicDelta_Britpop</td>
+                            <td>
+                                <audio controls class="player"
+                                    preload="metadata">
+                                    <source
+                                        src="assets/audio/MusicDelta_Britpop/wet.mp3"
+                                        type="audio/mp3">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls class="player"
+                                    preload="metadata">
+                                    <source
+                                        src="assets/audio/MusicDelta_Britpop/diffvox.mp3"
+                                        type="audio/mp3">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls class="player"
+                                    preload="metadata">
+                                    <source
+                                        src="assets/audio/MusicDelta_Britpop/no_delay.mp3"
+                                        type="audio/mp3">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls class="player"
+                                    preload="metadata">
+                                    <source
+                                        src="assets/audio/MusicDelta_Britpop/no_reverb.mp3"
+                                        type="audio/mp3">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls class="player"
+                                    preload="metadata">
+                                    <source
+                                        src="assets/audio/MusicDelta_Britpop/no_spatial.mp3"
+                                        type="audio/mp3">
+                                </audio>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="passage">MusicDelta_Country1</td>
+                            <td>
+                                <audio controls class="player"
+                                    preload="metadata">
+                                    <source
+                                        src="assets/audio/MusicDelta_Country1/wet.mp3"
+                                        type="audio/mp3">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls class="player"
+                                    preload="metadata">
+                                    <source
+                                        src="assets/audio/MusicDelta_Country1/diffvox.mp3"
+                                        type="audio/mp3">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls class="player"
+                                    preload="metadata">
+                                    <source
+                                        src="assets/audio/MusicDelta_Country1/no_delay.mp3"
+                                        type="audio/mp3">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls class="player"
+                                    preload="metadata">
+                                    <source
+                                        src="assets/audio/MusicDelta_Country1/no_reverb.mp3"
+                                        type="audio/mp3">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls class="player"
+                                    preload="metadata">
+                                    <source
+                                        src="assets/audio/MusicDelta_Country1/no_spatial.mp3"
+                                        type="audio/mp3">
+                                </audio>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="passage">MusicDelta_Disco</td>
+                            <td>
+                                <audio controls class="player"
+                                    preload="metadata">
+                                    <source
+                                        src="assets/audio/MusicDelta_Disco/wet.mp3"
+                                        type="audio/mp3">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls class="player"
+                                    preload="metadata">
+                                    <source
+                                        src="assets/audio/MusicDelta_Disco/diffvox.mp3"
+                                        type="audio/mp3">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls class="player"
+                                    preload="metadata">
+                                    <source
+                                        src="assets/audio/MusicDelta_Disco/no_delay.mp3"
+                                        type="audio/mp3">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls class="player"
+                                    preload="metadata">
+                                    <source
+                                        src="assets/audio/MusicDelta_Disco/no_reverb.mp3"
+                                        type="audio/mp3">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls class="player"
+                                    preload="metadata">
+                                    <source
+                                        src="assets/audio/MusicDelta_Disco/no_spatial.mp3"
+                                        type="audio/mp3">
+                                </audio>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="passage">MusicDelta_Gospel</td>
+                            <td>
+                                <audio controls class="player"
+                                    preload="metadata">
+                                    <source
+                                        src="assets/audio/MusicDelta_Gospel/wet.mp3"
+                                        type="audio/mp3">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls class="player"
+                                    preload="metadata">
+                                    <source
+                                        src="assets/audio/MusicDelta_Gospel/diffvox.mp3"
+                                        type="audio/mp3">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls class="player"
+                                    preload="metadata">
+                                    <source
+                                        src="assets/audio/MusicDelta_Gospel/no_delay.mp3"
+                                        type="audio/mp3">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls class="player"
+                                    preload="metadata">
+                                    <source
+                                        src="assets/audio/MusicDelta_Gospel/no_reverb.mp3"
+                                        type="audio/mp3">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls class="player"
+                                    preload="metadata">
+                                    <source
+                                        src="assets/audio/MusicDelta_Gospel/no_spatial.mp3"
+                                        type="audio/mp3">
+                                </audio>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="passage">MusicDelta_Grunge</td>
+                            <td>
+                                <audio controls class="player"
+                                    preload="metadata">
+                                    <source
+                                        src="assets/audio/MusicDelta_Grunge/wet.mp3"
+                                        type="audio/mp3">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls class="player"
+                                    preload="metadata">
+                                    <source
+                                        src="assets/audio/MusicDelta_Grunge/diffvox.mp3"
+                                        type="audio/mp3">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls class="player"
+                                    preload="metadata">
+                                    <source
+                                        src="assets/audio/MusicDelta_Grunge/no_delay.mp3"
+                                        type="audio/mp3">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls class="player"
+                                    preload="metadata">
+                                    <source
+                                        src="assets/audio/MusicDelta_Grunge/no_reverb.mp3"
+                                        type="audio/mp3">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls class="player"
+                                    preload="metadata">
+                                    <source
+                                        src="assets/audio/MusicDelta_Grunge/no_spatial.mp3"
+                                        type="audio/mp3">
+                                </audio>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="passage">MusicDelta_Punk</td>
+                            <td>
+                                <audio controls class="player"
+                                    preload="metadata">
+                                    <source
+                                        src="assets/audio/MusicDelta_Punk/wet.mp3"
+                                        type="audio/mp3">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls class="player"
+                                    preload="metadata">
+                                    <source
+                                        src="assets/audio/MusicDelta_Punk/diffvox.mp3"
+                                        type="audio/mp3">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls class="player"
+                                    preload="metadata">
+                                    <source
+                                        src="assets/audio/MusicDelta_Punk/no_delay.mp3"
+                                        type="audio/mp3">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls class="player"
+                                    preload="metadata">
+                                    <source
+                                        src="assets/audio/MusicDelta_Punk/no_reverb.mp3"
+                                        type="audio/mp3">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls class="player"
+                                    preload="metadata">
+                                    <source
+                                        src="assets/audio/MusicDelta_Punk/no_spatial.mp3"
+                                        type="audio/mp3">
+                                </audio>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="passage">MusicDelta_Rockabilly</td>
+                            <td>
+                                <audio controls class="player"
+                                    preload="metadata">
+                                    <source
+                                        src="assets/audio/MusicDelta_Rockabilly/wet.mp3"
+                                        type="audio/mp3">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls class="player"
+                                    preload="metadata">
+                                    <source
+                                        src="assets/audio/MusicDelta_Rockabilly/diffvox.mp3"
+                                        type="audio/mp3">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls class="player"
+                                    preload="metadata">
+                                    <source
+                                        src="assets/audio/MusicDelta_Rockabilly/no_delay.mp3"
+                                        type="audio/mp3">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls class="player"
+                                    preload="metadata">
+                                    <source
+                                        src="assets/audio/MusicDelta_Rockabilly/no_reverb.mp3"
+                                        type="audio/mp3">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls class="player"
+                                    preload="metadata">
+                                    <source
+                                        src="assets/audio/MusicDelta_Rockabilly/no_spatial.mp3"
+                                        type="audio/mp3">
+                                </audio>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="passage">MutualBenefit_NotForNothing</td>
+                            <td>
+                                <audio controls class="player"
+                                    preload="metadata">
+                                    <source
+                                        src="assets/audio/MutualBenefit_NotForNothing/wet.mp3"
+                                        type="audio/mp3">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls class="player"
+                                    preload="metadata">
+                                    <source
+                                        src="assets/audio/MutualBenefit_NotForNothing/diffvox.mp3"
+                                        type="audio/mp3">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls class="player"
+                                    preload="metadata">
+                                    <source
+                                        src="assets/audio/MutualBenefit_NotForNothing/no_delay.mp3"
+                                        type="audio/mp3">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls class="player"
+                                    preload="metadata">
+                                    <source
+                                        src="assets/audio/MutualBenefit_NotForNothing/no_reverb.mp3"
+                                        type="audio/mp3">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls class="player"
+                                    preload="metadata">
+                                    <source
+                                        src="assets/audio/MutualBenefit_NotForNothing/no_spatial.mp3"
+                                        type="audio/mp3">
+                                </audio>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="passage">PortStWillow_StayEven</td>
+                            <td>
+                                <audio controls class="player"
+                                    preload="metadata">
+                                    <source
+                                        src="assets/audio/PortStWillow_StayEven/wet.mp3"
+                                        type="audio/mp3">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls class="player"
+                                    preload="metadata">
+                                    <source
+                                        src="assets/audio/PortStWillow_StayEven/diffvox.mp3"
+                                        type="audio/mp3">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls class="player"
+                                    preload="metadata">
+                                    <source
+                                        src="assets/audio/PortStWillow_StayEven/no_delay.mp3"
+                                        type="audio/mp3">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls class="player"
+                                    preload="metadata">
+                                    <source
+                                        src="assets/audio/PortStWillow_StayEven/no_reverb.mp3"
+                                        type="audio/mp3">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls class="player"
+                                    preload="metadata">
+                                    <source
+                                        src="assets/audio/PortStWillow_StayEven/no_spatial.mp3"
+                                        type="audio/mp3">
+                                </audio>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="passage">StevenClark_Bounty</td>
+                            <td>
+                                <audio controls class="player"
+                                    preload="metadata">
+                                    <source
+                                        src="assets/audio/StevenClark_Bounty/wet.mp3"
+                                        type="audio/mp3">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls class="player"
+                                    preload="metadata">
+                                    <source
+                                        src="assets/audio/StevenClark_Bounty/diffvox.mp3"
+                                        type="audio/mp3">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls class="player"
+                                    preload="metadata">
+                                    <source
+                                        src="assets/audio/StevenClark_Bounty/no_delay.mp3"
+                                        type="audio/mp3">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls class="player"
+                                    preload="metadata">
+                                    <source
+                                        src="assets/audio/StevenClark_Bounty/no_reverb.mp3"
+                                        type="audio/mp3">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls class="player"
+                                    preload="metadata">
+                                    <source
+                                        src="assets/audio/StevenClark_Bounty/no_spatial.mp3"
+                                        type="audio/mp3">
+                                </audio>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="passage">StrandOfOaks_Spacestation</td>
+                            <td>
+                                <audio controls class="player"
+                                    preload="metadata">
+                                    <source
+                                        src="assets/audio/StrandOfOaks_Spacestation/wet.mp3"
+                                        type="audio/mp3">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls class="player"
+                                    preload="metadata">
+                                    <source
+                                        src="assets/audio/StrandOfOaks_Spacestation/diffvox.mp3"
+                                        type="audio/mp3">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls class="player"
+                                    preload="metadata">
+                                    <source
+                                        src="assets/audio/StrandOfOaks_Spacestation/no_delay.mp3"
+                                        type="audio/mp3">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls class="player"
+                                    preload="metadata">
+                                    <source
+                                        src="assets/audio/StrandOfOaks_Spacestation/no_reverb.mp3"
+                                        type="audio/mp3">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls class="player"
+                                    preload="metadata">
+                                    <source
+                                        src="assets/audio/StrandOfOaks_Spacestation/no_spatial.mp3"
+                                        type="audio/mp3">
+                                </audio>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td
+                                class="passage">TheScarletBrand_LesFleursDuMal</td>
+                            <td>
+                                <audio controls class="player"
+                                    preload="metadata">
+                                    <source
+                                        src="assets/audio/TheScarletBrand_LesFleursDuMal/wet.mp3"
+                                        type="audio/mp3">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls class="player"
+                                    preload="metadata">
+                                    <source
+                                        src="assets/audio/TheScarletBrand_LesFleursDuMal/diffvox.mp3"
+                                        type="audio/mp3">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls class="player"
+                                    preload="metadata">
+                                    <source
+                                        src="assets/audio/TheScarletBrand_LesFleursDuMal/no_delay.mp3"
+                                        type="audio/mp3">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls class="player"
+                                    preload="metadata">
+                                    <source
+                                        src="assets/audio/TheScarletBrand_LesFleursDuMal/no_reverb.mp3"
+                                        type="audio/mp3">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls class="player"
+                                    preload="metadata">
+                                    <source
+                                        src="assets/audio/TheScarletBrand_LesFleursDuMal/no_spatial.mp3"
+                                        type="audio/mp3">
+                                </audio>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="passage">Torres_NewSkin</td>
+                            <td>
+                                <audio controls class="player"
+                                    preload="metadata">
+                                    <source
+                                        src="assets/audio/Torres_NewSkin/wet.mp3"
+                                        type="audio/mp3">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls class="player"
+                                    preload="metadata">
+                                    <source
+                                        src="assets/audio/Torres_NewSkin/diffvox.mp3"
+                                        type="audio/mp3">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls class="player"
+                                    preload="metadata">
+                                    <source
+                                        src="assets/audio/Torres_NewSkin/no_delay.mp3"
+                                        type="audio/mp3">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls class="player"
+                                    preload="metadata">
+                                    <source
+                                        src="assets/audio/Torres_NewSkin/no_reverb.mp3"
+                                        type="audio/mp3">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls class="player"
+                                    preload="metadata">
+                                    <source
+                                        src="assets/audio/Torres_NewSkin/no_spatial.mp3"
+                                        type="audio/mp3">
+                                </audio>
+                            </td>
+                        </tr>
+
                     </table>
                 </div>
 
