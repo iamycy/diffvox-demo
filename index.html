@@ -115,13 +115,13 @@
                         research in vocal effects modelling and automatic
                         mixing.
                     </p>
-                    <img class="img-fluid" src='assets/images/diagram.png'>
-                    <br>
-                    <br>
-                    <p class="text-center">Figure 1: <em>The proposed model
-                            (upper left) and individual effects for vocal
-                            effects processing. </em></p>
                 </div>
+                <img class="img-fluid" src='assets/images/diagram.png'>
+                <br>
+                <br>
+                <p class="text-center">Figure 1: <em>The proposed model
+                        (upper left) and individual effects for vocal
+                        effects processing. </em></p>
             </div>
 
             <div class="section">
@@ -129,16 +129,16 @@
                 <hr>
                 <div class="section mb-5">
                     <p>
-                        <!-- This section contains the listening samples from the
-                        VCTK Corpus used for subjective evaluation in
-                        the paper. Reference is the ground truth audio, and the
-                        other columns are the copy-synthesis speech
-                        using the same clip with different models, which are the
-                        traditional linear predictive coding
-                        (<b>LPC</b>), the neural homomorphic vocoder
-                        (<b>NHV</b>), the differentiable WORLD vocoder
-                        (<b>&#9661World</b>), and the proposed source-filter
-                        GOLF vocoder (<b>GOLF</b>). -->
+                        This section contains the listening samples selected
+                        from the vocal tracks of the MedleyDB dataset.
+                        <b>No effects</b> refers to the original vocal
+                        recording, <b>Target</b> refers to the vocal track
+                        processed with the target effects, <b>DiffVox</b>
+                        refers to the vocal track processed with the
+                        DiffVox model, and <b>Real-time DiffVox</b> refers to
+                        replacing the approximated delay and reverb
+                        effects in DiffVox with real-time
+                        implementations.
                     </p>
                 </div>
 
@@ -153,17 +153,14 @@
                             <col>
                             <col>
                             <col>
-                            <col>
                         </colgroup>
                         <tr>
                             <th>Sample</th>
                             <th class="audio-col"><span>No effects</span></th>
                             <th class="audio-col"><span>Target</span></th>
                             <th class="audio-col"><span>DiffVox</span></th>
-                            <th class="audio-col"><span>w/o FDN</span></th>
-                            <th class="audio-col"><span>w/o DLY</span></th>
-                            <th class="audio-col"><span>w/o FDN &
-                                    DLY</span></th>
+                            <th class="audio-col"><span>Real-time
+                                    DiffVox</span></th>
                         </tr>
                         <tr>
                             <td class="passage">AClassicEducation_NightOwl</td>
@@ -195,23 +192,7 @@
                                 <audio controls="controls" class="player"
                                     preload="metadata">
                                     <source
-                                        src="assets/audio/AClassicEducation_NightOwl/no_reverb.mp3"
-                                        type="audio/mp3">
-                                </audio>
-                            </td>
-                            <td>
-                                <audio controls="controls" class="player"
-                                    preload="metadata">
-                                    <source
-                                        src="assets/audio/AClassicEducation_NightOwl/no_delay.mp3"
-                                        type="audio/mp3">
-                                </audio>
-                            </td>
-                            <td>
-                                <audio controls="controls" class="player"
-                                    preload="metadata">
-                                    <source
-                                        src="assets/audio/AClassicEducation_NightOwl/no_spatial.mp3"
+                                        src="assets/audio/AClassicEducation_NightOwl/rt_diffvox.mp3"
                                         type="audio/mp3">
                                 </audio>
                             </td>
